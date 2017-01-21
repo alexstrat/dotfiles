@@ -1,0 +1,15 @@
+[alias]
+    st = status
+    ci = commit -v
+    co = checkout
+[user]
+	name = Alexandre Lachèze
+	email = alexandre.lacheze@gmail.com
+[core]
+	editor = vim
+[push]
+	default = matching
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
